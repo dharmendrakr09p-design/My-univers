@@ -3,11 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bikaanery | Premium Sweets <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bikaanery | Premium Sweets & Royal Lassi</title>
 
 <link rel="stylesheet" href="style.css">
@@ -28,44 +23,61 @@
     </nav>
 </header>
 
+<!-- HERO SECTION -->
 <section id="home" class="hero">
     <div class="hero-content" data-aos="zoom-in">
         <h2>Experience Luxury Taste</h2>
         <p>Premium Indian Sweets & Special Royal Lassi</p>
-        <button onclick="scrollToSection('sweets')">Explore Menu</button>
+        <button onclick="document.getElementById('sweets').scrollIntoView({behavior:'smooth'})">
+            Explore Menu
+        </button>
     </div>
 </section>
 
+<!-- SWEETS SECTION -->
 <section id="sweets" class="section">
     <h2 data-aos="fade-up">Our Signature Sweets</h2>
+
     <div class="card-container">
+
+        <!-- IMAGE 1 PASTE HERE ✅ -->
         <div class="card" data-aos="fade-up">
-            <img src="images/sweet1.jpg">
+            <img src="images/Screenshot_20260226_080140_Chrome.jpg" alt="Royal Laddu">
             <h3>Royal Laddu</h3>
         </div>
+
+        <!-- IMAGE 2 PASTE HERE ✅ -->
         <div class="card" data-aos="fade-up" data-aos-delay="200">
-            <img src="images/sweet2.jpg">
+            <img src="images/Screenshot_20260226_080114_Chrome.jpg" alt="Kaju Katli">
             <h3>Kaju Katli</h3>
         </div>
+
+        <!-- IMAGE 3 PASTE HERE ✅ -->
         <div class="card" data-aos="fade-up" data-aos-delay="400">
-            <img src="images/sweet3.jpg">
+            <img src="images/Screenshot_20260226_080027_Chrome.jpg" alt="Rasgulla">
             <h3>Rasgulla</h3>
         </div>
+
     </div>
 </section>
 
+<!-- LASSI SECTION -->
 <section id="lassi" class="lassi">
     <div class="lassi-content" data-aos="fade-right">
-        <img src="images/lassi.jpg">
+        <img src="images/Screenshot_20260226_080140_Chrome.jpg" alt="Royal Lassi">
     </div>
+
     <div class="lassi-text" data-aos="fade-left">
         <h2>Special Royal Lassi 👑</h2>
-        <p>Made with pure desi curd, topped with dry fruits & saffron.
-        Thick, creamy and served chilled.</p>
+        <p>
+            Made with pure desi curd, topped with dry fruits & saffron.
+            Thick, creamy and served chilled.
+        </p>
         <button>Order Lassi Now</button>
     </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="section dark">
     <h2 data-aos="fade-up">Visit Bikaanery</h2>
     <p>Kota, Rajasthan</p>
@@ -80,12 +92,14 @@
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="script.js"></script>
-</body>
-</html><h2>Our Special Sweets</h2>
+<script>
+AOS.init({
+    duration: 1000,
+    once: true
+});
+</script>
 
-<img src="images/Screenshot_20260226_080140_Chrome.jpg" alt="Sweet 1">
-<img src="images/Screenshot_20260226_080114_Chrome.jpg" alt="Sweet 2">
-<img src="images/Screenshot_20260226_080027_Chrome.jpg" alt="Sweet 3">
+</body>
+</html>
 
   
