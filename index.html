@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bikaanery | Premium Sweets & Royal Lassi</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Bikaanery</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#sweets">Sweets</a>
+        <a href="#lassi">Royal Lassi</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content" data-aos="zoom-in">
+        <h2>Experience Luxury Taste</h2>
+        <p>Premium Indian Sweets & Special Royal Lassi</p>
+        <button onclick="scrollToSection('sweets')">Explore Menu</button>
+    </div>
+</section>
+
+<section id="sweets" class="section">
+    <h2 data-aos="fade-up">Our Signature Sweets</h2>
+    <div class="card-container">
+        <div class="card" data-aos="fade-up">
+            <img src="images/sweet1.jpg">
+            <h3>Royal Laddu</h3>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/sweet2.jpg">
+            <h3>Kaju Katli</h3>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <img src="images/sweet3.jpg">
+            <h3>Rasgulla</h3>
+        </div>
+    </div>
+</section>
+
+<section id="lassi" class="lassi">
+    <div class="lassi-content" data-aos="fade-right">
+        <img src="images/lassi.jpg">
+    </div>
+    <div class="lassi-text" data-aos="fade-left">
+        <h2>Special Royal Lassi 👑</h2>
+        <p>Made with pure desi curd, topped with dry fruits & saffron.
+        Thick, creamy and served chilled.</p>
+        <button>Order Lassi Now</button>
+    </div>
+</section>
+
+<section id="contact" class="section dark">
+    <h2 data-aos="fade-up">Visit Bikaanery</h2>
+    <p>Kota, Rajasthan</p>
+    <p>📞 +91 9876543210</p>
+</section>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/919876543210" class="whatsapp" target="_blank">💬</a>
+
+<footer>
+    <p>© 2026 Bikaanery Sweet Shop | Premium Taste</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
